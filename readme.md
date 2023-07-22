@@ -15,7 +15,7 @@ UnixFileFinder provides fast file searching on Unix systems using multiple threa
 Installation:
 
 ```sh
-https://github.com/Zeerhiy/UnixFileFinder.git
+git clone https://github.com/Zeerhiy/UnixFileFinder.git
 cd UnixFileFinder
 ```
 For build app:
