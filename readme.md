@@ -1,6 +1,5 @@
 ![Alt Text](.github/logo.png)
 
-#UnixFileFinder
 
 UnixFileFinder provides fast file searching on Unix systems using multiple threads.
 
