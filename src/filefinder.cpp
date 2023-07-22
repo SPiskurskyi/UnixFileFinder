@@ -1,4 +1,4 @@
-#include "../include/task.h"
+#include "../include/filefinder.h"
 
 std::mutex mtx;
 std::queue<std::filesystem::path> directoriesToSearch;

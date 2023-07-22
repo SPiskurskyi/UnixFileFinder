@@ -9,8 +9,8 @@ CXX_STANDARD = c++17
 CXXFLAGS = -Wall -Wextra -Wpedantic -std=$(CXX_STANDARD)
 CPPFLAGS = -I $(INCLUDE_DIR)
 
-LIB_NAME = libtask.a
-LIB_OBJS = $(BUILD_DIR)/task.o
+LIB_NAME = libfilefinder.a
+LIB_OBJS = $(BUILD_DIR)/filefinder.o
 
 INCLUDE_DIR = include
 SOURCE_DIR = src
@@ -22,7 +22,7 @@ create:
 	@mkdir -p build
 
 build: $(LIB_NAME)
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) app.cpp -L. -ltask -o $(BUILD_DIR)/app
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) app.cpp -L. -lfilefinder -o $(BUILD_DIR)/app
 
 $(LIB_NAME): $(LIB_OBJS)
 	ar rcs $(LIB_NAME) $(LIB_OBJS)
